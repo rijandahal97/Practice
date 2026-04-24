@@ -1,20 +1,34 @@
-/* Dark Mode */
-.dark {
-    background: #121212;
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Project links */
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
     color: white;
+    background: #007BFF;
+    padding: 8px 12px;
+    border-radius: 5px;
 }
 
-.dark header,
-.dark nav,
-.dark footer {
-    background: #1e1e1e;
+.project-card a:hover {
+    background: #0056b3;
 }
 
-input, textarea {
-    padding: 10px;
-    width: 200px;
-}
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
 
-textarea {
-    height: 80px;
+    .project-card {
+        width: 90%;
+    }
+
+    input, textarea {
+        width: 90%;
+    }
 }
