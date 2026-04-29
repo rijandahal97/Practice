@@ -32,3 +32,41 @@ html {
         width: 90%;
     }
 }
+/* Typing effect */
+#typing {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ddd;
+}
+
+/* Skills section */
+.skill {
+    margin: 20px auto;
+    width: 60%;
+    text-align: left;
+}
+
+.progress {
+    background: #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 10px;
+    border-radius: 20px;
+}
+
+/* Skill levels */
+.html { width: 80%; background: orange; }
+.css { width: 70%; background: blue; }
+.js { width: 50%; background: yellow; }
+
+/* Hover animation */
+.project-card {
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
