@@ -70,3 +70,7 @@ html {
 .project-card:hover {
     transform: scale(1.05);
 }
+#formMsg {
+    margin-top: 10px;
+    font-weight: bold;
+}
