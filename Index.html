@@ -3,119 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio - Day 3</title>
+    <title>Rijan Portfolio - Day 7</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            padding: 0;
+            transition: 0.3s;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            background: #555;
+            padding: 10px;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .project-card {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin: 10px;
+            display: inline-block;
+            width: 250px;
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+
+        .progress {
+            background: #ddd;
+            width: 80%;
+            margin: auto;
+        }
+
+        .progress-bar {
+            height: 10px;
+            background: green;
+        }
+
+        .html { width: 90%; }
+        .css { width: 80%; }
+        .js { width: 60%; }
+
+        footer {
+            background: #333;
+            color: white;
+            padding: 10px;
+        }
+
+        .dark {
+            background: black;
+            color: white;
+        }
+    </style>
 </head>
+
 <body>
 
-    <header>
-        <h1>Rijan's Portfolio</h1>
-        <p>Day 3 - Learning Web Development 🚀</p>
-        <button onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
-    </header>
+<header>
+    <h1>Rijan's Portfolio</h1>
+    <p>Day 7 - Web Development Journey 🚀</p>
+    <button onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+</header>
 
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+<nav>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
-    <!-- About -->
-    <section id="about">
-        <img src="https://via.placeholder.com/150" alt="Profile">
-        <h2>About Me</h2>
-        <p>I am improving my skills daily by building projects and pushing to GitHub.</p>
-    </section>
+<!-- About -->
+<section id="about">
+    <img src="https://via.placeholder.com/150">
+    <h2>About Me</h2>
+    <p>I am improving my skills daily and building real-world projects.</p>
+</section>
 
-    <!-- Projects -->
-    <section id="projects">
-        <h2>My Projects</h2>
-
-        <div class="project-card">
-            <h3>Calculator</h3>
-            <p>Simple calculator project.</p>
-        </div>
-
-        <div class="project-card">
-            <h3>Student Record System</h3>
-            <p>File handling based system.</p>
-        </div>
-
-        <div class="project-card">
-            <h3>Portfolio Website</h3>
-            <p>This portfolio itself.</p>
-        </div>
-
-    </section>
-
-    <!-- Contact -->
-    <form id="contactForm">
-    <input type="text" id="name" placeholder="Your Name"><br><br>
-    <input type="email" id="email" placeholder="Your Email"><br><br>
-    <textarea id="message" placeholder="Your Message"></textarea><br><br>
-    <button type="submit">Send</button>
-</form>
-
-<p id="formMsg"></p>
-    <section id="contact">
-        <h2>Contact Me</h2>
-
-        <form>
-            <input type="text" placeholder="Your Name" required><br><br>
-            <input type="email" placeholder="Your Email" required><br><br>
-            <textarea placeholder="Your Message" required></textarea><br><br>
-            <button type="submit">Send</button>
-        </form>
-
-    </section>
-
-    <footer>
-        <p>© 2026 Rijan | Day 3 Practice</p>
-    </footer>
-
-    <script src="script.js"></script>
-    <section id="projects">
+<!-- Projects -->
+<section id="projects">
     <h2>My Projects</h2>
 
     <div class="project-card">
         <h3>Calculator</h3>
         <p>Simple calculator project.</p>
-        <a href="https://github.com/yourusername/calculator" target="_blank">View Project</a>
+        <a href="#">View Project</a>
     </div>
 
     <div class="project-card">
         <h3>Student Record System</h3>
-        <p>File handling based system.</p>
-        <a href="https://github.com/yourusername/student-system" target="_blank">View Project</a>
-    </div>
-
-    <div class="project-card">
-        <h3>Portfolio Website</h3>
-        <p>This portfolio itself.</p>
-        <a href="https://github.com/yourusername/portfolio" target="_blank">View Project</a>
+        <p>File handling system.</p>
+        <a href="#">View Project</a>
     </div>
 
 </section>
-    <section id="skills">
+
+<!-- Skills -->
+<section id="skills">
     <h2>My Skills</h2>
 
-    <div class="skill">
-        <p>HTML</p>
-        <div class="progress"><div class="progress-bar html"></div></div>
-    </div>
+    <p>HTML</p>
+    <div class="progress"><div class="progress-bar html"></div></div>
 
-    <div class="skill">
-        <p>CSS</p>
-        <div class="progress"><div class="progress-bar css"></div></div>
-    </div>
+    <p>CSS</p>
+    <div class="progress"><div class="progress-bar css"></div></div>
 
-    <div class="skill">
-        <p>JavaScript</p>
-        <div class="progress"><div class="progress-bar js"></div></div>
-    </div>
-
+    <p>JavaScript</p>
+    <div class="progress"><div class="progress-bar js"></div></div>
 </section>
+
+<!-- Contact -->
+<section id="contact">
+    <h2>Contact Me</h2>
+
+    <form onsubmit="return validateForm()">
+        <input type="text" id="name" placeholder="Your Name"><br><br>
+        <input type="email" id="email" placeholder="Your Email"><br><br>
+        <textarea id="message" placeholder="Your Message"></textarea><br><br>
+        <button type="submit">Send</button>
+    </form>
+
+    <p id="formMsg"></p>
+</section>
+
+<footer>
+    <p>© 2026 Rijan | Day 7 Practice</p>
+</footer>
+
+<script>
+function toggleDarkMode() {
+    document.body.classList.toggle("dark");
+}
+
+function validateForm() {
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+
+    if (name === "" || email === "") {
+        document.getElementById("formMsg").innerText = "Please fill all fields!";
+        return false;
+    }
+
+    document.getElementById("formMsg").innerText = "Message sent successfully!";
+    return false;
+}
+</script>
+
 </body>
 </html>
