@@ -148,5 +148,27 @@ input, textarea {
 
     .skill {
         width: 90%;
+        /* Fade-in animation */
+section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.6s ease;
+}
+
+section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hero section improvement */
+header {
+    padding: 40px;
+}
+
+/* Typing text */
+#typing {
+    font-size: 20px;
+    color: #007BFF;
+}
     }
 }
