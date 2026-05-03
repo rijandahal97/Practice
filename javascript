@@ -53,5 +53,50 @@ document.addEventListener("DOMContentLoaded", function () {
     // Optional: typing effect (safe call)
     if (typeof typeEffect === "function") {
         typeEffect();
+// ✨ Typing Effect
+const text = "I am a Web Developer 🚀";
+let index = 0;
+
+function typeEffect() {
+    if (index < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeEffect, 50);
+    }
+}
+
+// 🌙 Dark Mode (keep your previous code)
+function toggleDarkMode() {
+    document.body.classList.toggle("dark");
+
+    localStorage.setItem(
+        "mode",
+        document.body.classList.contains("dark") ? "dark" : "light"
+    );
+}
+
+// Load saved mode + typing
+document.addEventListener("DOMContentLoaded", () => {
+    if (localStorage.getItem("mode") === "dark") {
+        document.body.classList.add("dark");
+    }
+    typeEffect();
+});
+
+// 📬 Form Validation (same as before)
+
+// 👀 Scroll Animation
+const sections = document.querySelectorAll("section");
+
+window.addEventListener("scroll", () => {
+    sections.forEach(section => {
+        let top = window.scrollY;
+        let offset = section.offsetTop - 200;
+
+        if (top > offset) {
+            section.classList.add("show");
+        }
+    });
+});
     }
 });
