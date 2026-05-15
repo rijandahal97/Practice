@@ -95,6 +95,25 @@ window.addEventListener("scroll", () => {
 
         if (top > offset) {
             section.classList.add("show");
+// 🎯 Project Filtering
+function filterProjects(category) {
+
+    const projects = document.querySelectorAll(".project-card");
+
+    projects.forEach(project => {
+
+        if (category === "all") {
+            project.style.display = "inline-block";
+        }
+        else if (project.classList.contains(category)) {
+            project.style.display = "inline-block";
+        }
+        else {
+            project.style.display = "none";
+        }
+
+    });
+}
         }
     });
 });
