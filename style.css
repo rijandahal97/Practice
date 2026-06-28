@@ -83,6 +83,15 @@ nav ul li a {
     border-radius: 20px;
     overflow: hidden;
 }
+#progressBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 0%;
+    background: #007BFF;
+    z-index: 1000;
+}
 
 .progress-bar {
     height: 10px;
