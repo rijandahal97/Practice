@@ -9,6 +9,7 @@ function toggleDarkMode() {
     }
 }
 
+
 // Run when DOM is fully loaded
 document.addEventListener("DOMContentLoaded", function () {
 
