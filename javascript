@@ -123,6 +123,35 @@ window.addEventListener("scroll", () => {
 
     document.getElementById("progressBar").style.width =
         progress + "%";
+const modal = document.getElementById("projectModal");
+
+const closeBtn = document.querySelector(".close");
+
+function openModal(title, description){
+
+    document.getElementById("modalTitle").innerText = title;
+
+    document.getElementById("modalDescription").innerText = description;
+
+    modal.style.display = "block";
+
+}
+
+closeBtn.onclick = function(){
+
+    modal.style.display = "none";
+
+}
+
+window.onclick = function(event){
+
+    if(event.target == modal){
+
+        modal.style.display = "none";
+
+    }
+
+}
 });
 
     });
