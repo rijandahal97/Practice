@@ -8,6 +8,24 @@ function toggleDarkMode() {
         localStorage.setItem("mode", "light");
     }
 }
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightboxImg");
+const closeLightbox = document.getElementById("closeLightbox");
+
+function openImage(imageSrc) {
+    lightbox.style.display = "flex";
+    lightboxImg.src = imageSrc;
+}
+
+closeLightbox.addEventListener("click", () => {
+    lightbox.style.display = "none";
+});
+
+lightbox.addEventListener("click", (event) => {
+    if (event.target === lightbox) {
+        lightbox.style.display = "none";
+    }
+});
 
 
 // Run when DOM is fully loaded
