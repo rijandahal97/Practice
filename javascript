@@ -170,6 +170,46 @@ window.onclick = function(event){
     }
 
 }
+const username = "YOUR_GITHUB_USERNAME";
+
+async function loadRepositories() {
+
+    const container = document.getElementById("repoContainer");
+
+    try {
+
+        const response = await fetch(
+            `https://api.github.com/users/${username}/repos?sort=updated`
+        );
+
+        const repos = await response.json();
+
+        container.innerHTML = "";
+
+        repos.slice(0, 6).forEach(repo => {
+
+            container.innerHTML += `
+                <div class="repo-card">
+                    <h3>${repo.name}</h3>
+                    <p>${repo.description || "No description available."}</p>
+
+                    <a href="${repo.html_url}" target="_blank">
+                        View Repository
+                    </a>
+                </div>
+            `;
+        });
+
+    } catch (error) {
+
+        container.innerHTML =
+            "<p>Unable to load repositories.</p>";
+
+    }
+
+}
+
+document.addEventListener("DOMContentLoaded", loadRepositories);
 });
 
     });
