@@ -8,7 +8,9 @@ function toggleDarkMode() {
         localStorage.setItem("mode", "light");
     }
 }
-
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightboxImg");
+const closeLightbox = document.getElementById("closeLightbox");
 
 function openImage(imageSrc) {
     lightbox.style.display = "flex";
