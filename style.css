@@ -100,34 +100,7 @@ nav ul li a:hover {
    DAY 2 - SECTIONS
 ========================================================= */
 
-section {
-    padding: 60px 20px;
-    text-align: center;
-}
 
-section h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
-}
-
-
-/* =========================================================
-   DAY 2 - ABOUT
-========================================================= */
-
-#about img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 20px;
-    border: 4px solid #007bff;
-}
-
-#about p {
-    max-width: 700px;
-    margin: auto;
-}
 
 
 /* =========================================================
