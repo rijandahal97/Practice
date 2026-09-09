@@ -42,13 +42,7 @@ lightbox.addEventListener("click", (event) => {
 });
 
 
-// Run when DOM is fully loaded
-document.addEventListener("DOMContentLoaded", function () {
 
-    // Load saved mode
-    if (localStorage.getItem("mode") === "dark") {
-        document.body.classList.add("dark");
-    }
 
     // 📬 Form Validation
     const form = document.getElementById("contactForm");
