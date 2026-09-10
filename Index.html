@@ -313,7 +313,18 @@ function toggleDarkMode() {
     document.body.classList.toggle("dark");
 }
 
+function validateForm() {
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
 
+    if (name === "" || email === "") {
+        document.getElementById("formMsg").innerText = "Please fill all fields!";
+        return false;
+    }
+
+    document.getElementById("formMsg").innerText = "Message sent successfully!";
+    return false;
+}
 </script>
 
 </body>
