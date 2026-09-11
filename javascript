@@ -1,7 +1,15 @@
 // 🌙 Dark Mode with Save
 function toggleDarkMode() {
     document.body.classList.toggle("dark");
-
+ if (document.body.classList.contains("dark")) {
+        localStorage.setItem("mode", "dark");
+    } else {
+        localStorage.setItem("mode", "light");
+    }
+}
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightboxImg");
+const closeLightbox = document.getElementById("closeLightbox");
    
 
 function openImage(imageSrc) {
