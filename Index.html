@@ -1,5 +1,227 @@
 <p id="typing"></p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <div class="services-container">
 
+        <div class="service-card">
+            <div class="service-icon">💻</div>
+            <h3>Web Development</h3>
+            <p>
+                I create responsive and user-friendly websites
+                using HTML, CSS and JavaScript.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🎨</div>
+            <h3>Web Design</h3>
+            <p>
+                I design clean and modern interfaces with
+                a focus on good user experience.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">⚙️</div>
+            <h3>JavaScript Development</h3>
+            <p>
+                I build interactive features and dynamic
+                web applications using JavaScript.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">📱</div>
+            <h3>Responsive Design</h3>
+            <p>
+                I make websites work properly on desktops,
+                tablets and mobile devices.
+            </p>
+        </div>
+
+    </div>
+</section>
+<div id="projectModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close">&times;</span>
+
+        <h2 id="modalTitle"></h2>
+
+        <p id="modalDescription"></p>
+        <section id="gallery">
+    <h2>My Gallery</h2>
+            <section id="github">
+    <h2>My GitHub Projects</h2>
+
+    <div id="repoContainer" class="repo-container">
+        <p>Loading repositories...</p>
+    </div>
+</section>
+            <section id="testimonials">
+    <h2>Testimonials</h2>
+
+    <div class="testimonial-container">
+
+        <div class="testimonial-card">
+            <p>
+                "Rijan is a hardworking developer who always learns new
+                technologies and completes projects on time."
+            </p>
+
+            <h4>- John Doe</h4>
+        </div>
+
+        <div class="testimonial-card">
+            <p>
+                "Excellent problem-solving skills and a great attitude
+                toward learning web development."
+            </p>
+
+            <h4>- Jane Smith</h4>
+        </div>
+
+        <div class="testimonial-card">
+            <p>
+                "Creative portfolio design with responsive and interactive
+                features."
+            </p>
+
+            <h4>- Alex Brown</h4>
+        </div>
+
+    </div>
+</section>
+
+    <div class="gallery">
+
+        <img src="images/project1.jpg" alt="Project 1" onclick="openImage(this.src)">
+
+        <img src="images/project2.jpg" alt="Project 2" onclick="openImage(this.src)">
+
+        <img src="images/project3.jpg" alt="Project 3" onclick="openImage(this.src)">
+
+        <img src="images/project4.jpg" alt="Project 4" onclick="openImage(this.src)">
+
+    </div>
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox">
+    <span id="closeLightbox">&times;</span>
+
+    <img id="lightboxImg" src="" alt="Preview">
+</div>
+
+    </div>
+<div class="project-card"
+     onclick="openModal(
+     'Calculator',
+     'A simple calculator built using HTML, CSS and JavaScript.')">
+
+    <h3>Calculator</h3>
+    <p>Click to view details.</p>
+
+</div>
+</div>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            padding: 0;
+            transition: 0.3s;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            background: #555;
+            padding: 10px;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .project-card {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin: 10px;
+            display: inline-block;
+            width: 250px;
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+        <div id="progressBar"></div>
+
+        .progress {
+            background: #ddd;
+            width: 80%;
+            margin: auto;
+        }
+
+        .progress-bar {
+            height: 10px;
+            background: green;
+        }
+
+        .html { width: 90%; }
+        .css { width: 80%; }
+        .js { width: 60%; }
+
+        footer {
+            background: #333;
+            color: white;
+            padding: 10px;
+        }
+
+        .dark {
+            background: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Rijan's Portfolio</h1>
+    <p>Day 7 - Web Development Journey 🚀</p>
+    <button onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
 <!-- About -->
 <section id="about">
