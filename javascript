@@ -220,11 +220,4 @@ async function loadRepositories() {
 document.addEventListener("DOMContentLoaded", loadRepositories);
 });
 
-    });
-}
-        }
-    });
-});
-    }
-});
-
+ 
