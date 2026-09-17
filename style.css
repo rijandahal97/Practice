@@ -1,1 +1,1063 @@
-ghjk
+/* =========================================================
+   RIJAN'S PORTFOLIO
+   COMPLETE CSS - DAY 1 TO DAY 16
+========================================================= */
+
+
+/* =========================================================
+   DAY 1 - BASIC RESET & BODY
+========================================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background: #ffffff;
+    color: #333333;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+/* =========================================================
+   DAY 1 - HEADER
+========================================================= */
+
+header {
+    background: #333333;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+header button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+header button:hover {
+    background: #0056b3;
+}
+
+
+/* =========================================================
+   DAY 1 - NAVIGATION
+========================================================= */
+
+nav {
+    background: #555555;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 12px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00aaff;
+}
+
+
+/* =========================================================
+   DAY 2 - SECTIONS
+========================================================= */
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   DAY 2 - ABOUT
+========================================================= */
+
+#about img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 4px solid #007bff;
+}
+
+#about p {
+    max-width: 700px;
+    margin: auto;
+}
+
+
+/* =========================================================
+   DAY 3 - PROJECT CARDS
+========================================================= */
+
+.project-card {
+    display: inline-block;
+    vertical-align: top;
+
+    width: 250px;
+    min-height: 180px;
+
+    margin: 15px;
+    padding: 20px;
+
+    background: white;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.project-card h3 {
+    margin-bottom: 10px;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+/* =========================================================
+   DAY 3 - PROJECT LINKS
+========================================================= */
+
+.project-card a {
+    display: inline-block;
+
+    margin-top: 10px;
+    padding: 8px 12px;
+
+    background: #007bff;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 5px;
+
+    transition: 0.3s ease;
+}
+
+.project-card a:hover {
+    background: #0056b3;
+}
+
+
+/* =========================================================
+   DAY 4 - SKILLS
+========================================================= */
+
+.skill {
+    width: 60%;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.skill p {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.progress {
+    width: 100%;
+    height: 10px;
+
+    background: #dddddd;
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 10px;
+    border-radius: 20px;
+}
+
+
+/* Skill Levels */
+
+.html {
+    width: 80%;
+    background: orange;
+}
+
+.css {
+    width: 70%;
+    background: blue;
+}
+
+.js {
+    width: 50%;
+    background: yellow;
+}
+
+
+/* =========================================================
+   DAY 5 - CONTACT FORM
+========================================================= */
+
+form {
+    text-align: center;
+}
+
+input,
+textarea {
+    width: 60%;
+
+    padding: 10px;
+    margin: 5px 0;
+
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+form button {
+    padding: 10px 20px;
+
+    border: none;
+    border-radius: 5px;
+
+    background: #007bff;
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+form button:hover {
+    background: #0056b3;
+}
+
+#formMsg {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   DAY 6 - TYPING EFFECT
+========================================================= */
+
+#typing {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007bff;
+    min-height: 30px;
+}
+
+
+/* =========================================================
+   DAY 7 - RESPONSIVE DESIGN
+========================================================= */
+
+@media (max-width: 600px) {
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .project-card {
+        width: 90%;
+    }
+
+    input,
+    textarea {
+        width: 90%;
+    }
+
+    .skill {
+        width: 90%;
+    }
+}
+
+
+/* =========================================================
+   DAY 8 - SCROLL ANIMATION
+========================================================= */
+
+section {
+    opacity: 0;
+    transform: translateY(30px);
+
+    transition:
+        opacity 0.6s ease,
+        transform 0.6s ease;
+}
+
+section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   DAY 9 - PROJECT FILTER BUTTONS
+========================================================= */
+
+.filter-buttons {
+    margin-bottom: 20px;
+}
+
+.filter-buttons button {
+    padding: 10px 15px;
+
+    margin: 5px;
+
+    border: none;
+    border-radius: 5px;
+
+    background: #007bff;
+    color: white;
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+.filter-buttons button:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   DAY 10 - SCROLL PROGRESS BAR
+========================================================= */
+
+#progressBar {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 0%;
+    height: 5px;
+
+    background: #007bff;
+
+    z-index: 9999;
+}
+
+
+/* =========================================================
+   DAY 10 - CV BUTTON
+========================================================= */
+
+.cv-btn {
+    display: inline-block;
+
+    margin-top: 15px;
+    padding: 10px 20px;
+
+    background: #28a745;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+.cv-btn:hover {
+    background: #218838;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   DAY 10 - FOOTER
+========================================================= */
+
+footer {
+    background: #333333;
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+
+/* =========================================================
+   DAY 11 - PROJECT SEARCH
+========================================================= */
+
+#searchProject {
+    display: block;
+
+    width: 60%;
+
+    padding: 10px;
+    margin: 20px auto;
+
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+
+    font-size: 16px;
+}
+
+#searchProject:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+
+/* =========================================================
+   DAY 11 - BACK TO TOP
+========================================================= */
+
+#topBtn {
+    position: fixed;
+
+    right: 20px;
+    bottom: 20px;
+
+    display: none;
+
+    padding: 10px 15px;
+
+    border: none;
+    border-radius: 5px;
+
+    background: #007bff;
+    color: white;
+
+    cursor: pointer;
+
+    z-index: 1000;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+#topBtn:hover {
+    background: #0056b3;
+    transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   DAY 12 - PROJECT MODAL
+========================================================= */
+
+.modal {
+    display: none;
+
+    position: fixed;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.7);
+
+    z-index: 2000;
+}
+
+.modal-content {
+    width: 60%;
+
+    margin: 10% auto;
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+.close {
+    float: right;
+
+    font-size: 30px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   DAY 13 - IMAGE GALLERY
+========================================================= */
+
+.gallery {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 20px;
+
+    max-width: 1100px;
+
+    margin: 20px auto;
+}
+
+.gallery img {
+    width: 100%;
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+
+/* =========================================================
+   DAY 13 - LIGHTBOX
+========================================================= */
+
+#lightbox {
+    display: none;
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.9);
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 3000;
+}
+
+#lightbox img {
+    max-width: 90%;
+    max-height: 85%;
+
+    border-radius: 10px;
+}
+
+#closeLightbox {
+    position: absolute;
+
+    top: 20px;
+    right: 30px;
+
+    color: white;
+
+    font-size: 40px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   DAY 14 - GITHUB REPOSITORIES
+========================================================= */
+
+.repo-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 20px;
+
+    max-width: 1100px;
+
+    margin: 20px auto;
+}
+
+.repo-card {
+    padding: 20px;
+
+    background: white;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 10px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.repo-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.repo-card h3 {
+    margin-bottom: 10px;
+}
+
+.repo-card a {
+    display: inline-block;
+
+    margin-top: 10px;
+
+    padding: 8px 12px;
+
+    background: #24292e;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+}
+
+.repo-card a:hover {
+    background: #000000;
+}
+
+
+/* =========================================================
+   DAY 15 - TESTIMONIALS
+========================================================= */
+
+.testimonial-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 20px;
+
+    max-width: 1100px;
+
+    margin: 30px auto;
+}
+
+.testimonial-card {
+    padding: 20px;
+
+    background: white;
+
+    border-radius: 10px;
+
+    border-left: 5px solid #007bff;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.1);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        opacity 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-card p {
+    font-style: italic;
+
+    margin-bottom: 15px;
+}
+
+.testimonial-card h4 {
+    color: #007bff;
+}
+
+
+/* =========================================================
+   DAY 16 - SERVICES
+========================================================= */
+
+#services {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#services h2 {
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+#services > p {
+    margin-bottom: 30px;
+}
+
+.services-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+.service-card {
+    padding: 30px 20px;
+
+    background: white;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 12px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.service-icon {
+    font-size: 40px;
+
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    margin-bottom: 10px;
+}
+
+
+/* =========================================================
+   DARK MODE - DAY 3/6+
+========================================================= */
+
+.dark {
+    background: #121212;
+    color: white;
+}
+
+
+/* Header */
+
+.dark header {
+    background: #1e1e1e;
+}
+
+
+/* Navigation */
+
+.dark nav {
+    background: #222222;
+}
+
+.dark nav ul {
+    background: #222222;
+}
+
+
+/* Project Cards */
+
+.dark .project-card {
+    background: #1e1e1e;
+    color: white;
+
+    border-color: #333333;
+}
+
+
+/* Skills */
+
+.dark .progress {
+    background: #333333;
+}
+
+
+/* Search */
+
+.dark #searchProject {
+    background: #222222;
+    color: white;
+
+    border-color: #555555;
+}
+
+
+/* Modal */
+
+.dark .modal-content {
+    background: #222222;
+    color: white;
+}
+
+
+/* Gallery */
+
+.dark .gallery img {
+    border: 2px solid #444444;
+}
+
+
+/* GitHub */
+
+.dark .repo-card {
+    background: #222222;
+    color: white;
+
+    border-color: #444444;
+}
+
+
+/* Testimonials */
+
+.dark .testimonial-card {
+    background: #222222;
+    color: white;
+
+    border-left-color: #4da3ff;
+}
+
+
+/* Services */
+
+.dark .service-card {
+    background: #222222;
+    color: white;
+
+    border-color: #444444;
+}
+
+
+/* Inputs */
+
+.dark input,
+.dark textarea {
+    background: #222222;
+    color: white;
+
+    border-color: #555555;
+}
+
+
+/* Top Button */
+
+.dark #topBtn {
+    background: #444444;
+}
+
+.dark #topBtn:hover {
+    background: #666666;
+}
+
+
+/* =========================================================
+   RESPONSIVE DESIGN
+========================================================= */
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .services-container {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .skill {
+        width: 75%;
+    }
+
+    input,
+    textarea {
+        width: 75%;
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    /* Header */
+
+    header {
+        padding: 30px 15px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+
+    /* Navigation */
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+
+    /* Sections */
+
+    section {
+        padding: 40px 15px;
+    }
+
+
+    /* Projects */
+
+    .project-card {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+
+    /* Search */
+
+    #searchProject {
+        width: 90%;
+    }
+
+
+    /* Skills */
+
+    .skill {
+        width: 90%;
+    }
+
+
+    /* Contact */
+
+    input,
+    textarea {
+        width: 90%;
+    }
+
+
+    /* Modal */
+
+    .modal-content {
+        width: 90%;
+        margin: 20% auto;
+    }
+
+
+    /* Services */
+
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Gallery */
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* GitHub */
+
+    .repo-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Testimonials */
+
+    .testimonial-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    section h2 {
+        font-size: 25px;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    #topBtn {
+        right: 10px;
+        bottom: 10px;
+    }
+}
