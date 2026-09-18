@@ -9,6 +9,8 @@ function toggleDarkMode() {
 
 }
 
+
+
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightboxImg");
 const closeLightbox = document.getElementById("closeLightbox");
