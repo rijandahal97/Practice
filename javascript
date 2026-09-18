@@ -52,6 +52,31 @@ document.addEventListener("DOMContentLoaded", function () {
         form.addEventListener("submit", function (e) {
             e.preventDefault();
 
+       let name = document.getElementById("name").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let message = document.getElementById("message").value.trim();
+
+            let msg = document.getElementById("formMsg");
+
+            // Email pattern check
+            let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+            if (name === "" || email === "" || message === "") {
+                msg.style.color = "red";
+                msg.innerText = "Please fill all fields!";
+            } 
+            else if (!email.match(emailPattern)) {
+                msg.style.color = "orange";
+                msg.innerText = "Enter a valid email!";
+            }
+            else {
+                msg.style.color = "green";
+                msg.innerText = "Message sent successfully!";
+
+                form.reset(); // clear form
+            }
+        });
+    }
      
     // Optional: typing effect (safe call)
     if (typeof typeEffect === "function") {
