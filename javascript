@@ -6,6 +6,7 @@ function toggleDarkMode() {
     } else {
         localStorage.setItem("mode", "light");
     }
+
 }
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightboxImg");
