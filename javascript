@@ -15,6 +15,7 @@ function openImage(imageSrc) {
     lightboxImg.src = imageSrc;
 }
 
+
 // 🚀 Day 16 - Service Card Animation
 const serviceCards = document.querySelectorAll(".service-card");
 
