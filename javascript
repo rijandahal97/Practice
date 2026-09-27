@@ -65,6 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 msg.style.color = "orange";
                 msg.innerText = "Enter a valid email!";
             }
+
             else {
                 msg.style.color = "green";
                 msg.innerText = "Message sent successfully!";
