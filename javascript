@@ -26,7 +26,8 @@ serviceCards.forEach(card => {
         card.style.transform = "translateY(0)";
     });
 });
-
+closeLightbox.addEventListener("click", () => {
+    lightbox.style.display = "none";
 });
 
 lightbox.addEventListener("click", (event) => {
