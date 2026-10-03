@@ -14,7 +14,15 @@ function openImage(imageSrc) {
     lightbox.style.display = "flex";
     lightboxImg.src = imageSrc;
 }
-
+// 🚀 Day 16 - Service Card Animation
+const serviceCards = document.querySelectorAll(".service-card");
+serviceCards.forEach(card => {
+card.addEventListener("mouseenter", () => {
+        card.style.transform = "translateY(-10px)";
+    });
+    card.addEventListener("mouseleave", () => {
+        card.style.transform = "translateY(0)";
+    });
 
 
 });
