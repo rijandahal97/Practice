@@ -19,7 +19,7 @@ lightboxImg.src = imageSrc;
 const serviceCards = document.querySelectorAll(".service-card");
 serviceCards.forEach(card => {
 card.addEventListener("mouseenter", () => {
-        card.style.transform = "translateY(-10px)";
+ card.style.transform = "translateY(-10px)";
     });
     card.addEventListener("mouseleave", () => {
         card.style.transform = "translateY(0)";
