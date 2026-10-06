@@ -152,26 +152,16 @@ function openModal(title, description){
     document.getElementById("modalDescription").innerText = description;
 
     modal.style.display = "block";
-
 }
-
 closeBtn.onclick = function(){
-
     modal.style.display = "none";
-
 }
-
 window.onclick = function(event){
-
     if(event.target == modal){
-
         modal.style.display = "none";
-
     }
-
 }
 const username = "YOUR_GITHUB_USERNAME";
-
 async function loadRepositories() {
 
     const container = document.getElementById("repoContainer");
