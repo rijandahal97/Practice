@@ -11,7 +11,6 @@
 html {
     scroll-behavior: smooth;
 } 
- 
 body {
 /* =========================================================
    DAY 1 - HEADER
@@ -22,7 +21,6 @@ body {
     color: #333333;
    transition: background 0.3s ease, color 0.3s ease;
 }
- 
 header {
     background: #333333;
     color: white;
@@ -31,13 +29,12 @@ header {
 }  
 header h1 {
     font-size: 36px;
-    margin-bottom: 10px;
+   margin-bottom: 10px;
 }
 header p {
     font-size: 18px;
     margin-bottom: 15px;
 }
-
 header button {
     padding: 10px 18px;
     border: none;
@@ -54,7 +51,6 @@ header button:hover {
 /* =========================================================
    DAY 1 - NAVIGATION
 ========================================================= */
-
 nav {
     background: #555555;
 }
@@ -69,38 +65,30 @@ nav ul {
 nav ul li {
     margin: 0 15px;
 }
-
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
-
 nav ul li a:hover {
     color: #00aaff;
 }
-
-
 /* =========================================================
    DAY 2 - SECTIONS
 ========================================================= */
-
 section {
     padding: 60px 20px;
     text-align: center;
 }
-
 section h2 {
     font-size: 30px;
     margin-bottom: 20px;
 }
 
-
 /* =========================================================
    DAY 2 - ABOUT
 ========================================================= */
-
 #about img {
     width: 150px;
     height: 150px;
@@ -114,12 +102,9 @@ section h2 {
     max-width: 700px;
     margin: auto;
 }
-
-
 /* =========================================================
    DAY 3 - PROJECT CARDS
 ========================================================= */
-
 .project-card {
     display: inline-block;
     vertical-align: top;
@@ -142,7 +127,6 @@ section h2 {
 .project-card h3 {
     margin-bottom: 10px;
 }
-
 .project-card:hover {
     transform: scale(1.05);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -156,7 +140,6 @@ section h2 {
 
     margin-top: 10px;
     padding: 8px 12px;
-
     background: #007bff;
     color: white;
 
