@@ -29,7 +29,6 @@ card.addEventListener("mouseenter", () => {
 closeLightbox.addEventListener("click", () => {
     lightbox.style.display = "none";
 });
-
 lightbox.addEventListener("click", (event) => {
     if (event.target === lightbox) {
         lightbox.style.display = "none";
