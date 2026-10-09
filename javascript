@@ -41,6 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (localStorage.getItem("mode") === "dark") {
         document.body.classList.add("dark");
     }
+
     // 📬 Form Validation
     const form = document.getElementById("contactForm");
     if (form) {
