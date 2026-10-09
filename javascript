@@ -70,6 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }
+
     // Optional: typing effect (safe call)
     if (typeof typeEffect === "function") {
         typeEffect();
