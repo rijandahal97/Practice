@@ -7,7 +7,50 @@ function toggleDarkMode() {
         localStorage.setItem("mode", "light");
 }
 }
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightboxImg");
+const closeLightbox = document.getElementById("closeLightbox");
+function openImage(imageSrc) {
+lightbox.style.display = "flex";
+lightboxImg.src = imageSrc;
+}
+// 🚀 Day 16 - Service Card Animation
+const serviceCards = document.querySelectorAll(".service-card");
+serviceCards.forEach(card => {
+card.addEventListener("mouseenter", () => {
+ card.style.transform = "translateY(-10px)";
+    });
+    card.addEventListener("mouseleave", () => {
+        card.style.transform = "translateY(0)";
+    });
+});
+closeLightbox.addEventListener("click", () => {
+    lightbox.style.display = "none";
+});
+lightbox.addEventListener("click", (event) => {
+    if (event.target === lightbox) {
+        lightbox.style.display = "none";
+    }
+});
+// Run when DOM is fully loaded
+document.addEventListener("DOMContentLoaded", function () {
+    // Load saved mode
+    if (localStorage.getItem("mode") === "dark") {
+        document.body.classList.add("dark");
+    }
+    // 📬 Form Validation
+    const form = document.getElementById("contactForm");
+    if (form) {
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+       let name = document.getElementById("name").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let message = document.getElementById("message").value.trim();
+            let msg = document.getElementById("formMsg");
+            // Email pattern check
+            let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 
+            if (name === "" || email === "" || 
 message === "") {
                 msg.style.color = "red";
                 msg.innerText = "Please fill all fields!";
