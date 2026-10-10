@@ -170,7 +170,6 @@ async function loadRepositories() {
         const response = await fetch(
             `https://api.github.com/users/${username}/repos?sort=updated`
         );
-
         const repos = await response.json();
 
         container.innerHTML = "";
