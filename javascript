@@ -195,6 +195,5 @@ async function loadRepositories() {
             "<p>Unable to load repositories.</p>";
     }
 }
-
 document.addEventListener("DOMContentLoaded", loadRepositories);
 });
