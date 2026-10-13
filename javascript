@@ -85,7 +85,6 @@ function typeEffect() {
         setTimeout(typeEffect, 50);
     }
 }
-
 // 🌙 Dark Mode (keep your previous code)
 function toggleDarkMode() {
     document.body.classList.toggle("dark");
