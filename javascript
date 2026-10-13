@@ -25,7 +25,6 @@ card.addEventListener("mouseenter", () => {
         card.style.transform = "translateY(0)";
     });
 });
-
 closeLightbox.addEventListener("click", () => {
     lightbox.style.display = "none";
 });
