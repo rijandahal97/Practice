@@ -33,6 +33,7 @@ lightbox.addEventListener("click", (event) => {
         lightbox.style.display = "none";
     }
 });
+
 // Run when DOM is fully loaded
 document.addEventListener("DOMContentLoaded", function () {
     // Load saved mode
