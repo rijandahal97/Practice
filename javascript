@@ -172,11 +172,8 @@ async function loadRepositories() {
             `https://api.github.com/users/${username}/repos?sort=updated`
         );
         const repos = await response.json();
-
         container.innerHTML = "";
-
         repos.slice(0, 6).forEach(repo => {
-
             container.innerHTML += `
                 <div class="repo-card">
                     <h3>${repo.name}</h3>
