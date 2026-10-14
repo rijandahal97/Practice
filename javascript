@@ -188,7 +188,6 @@ async function loadRepositories() {
                 </div>
             `;
         });
-
     } catch (error) {
 
         container.innerHTML =
