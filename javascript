@@ -90,7 +90,6 @@ function toggleDarkMode() {
         document.body.classList.contains("dark") ? "dark" : "light"
     );
 }
-
 // Load saved mode + typing
 document.addEventListener("DOMContentLoaded", () => {
     if (localStorage.getItem("mode") === "dark") {
